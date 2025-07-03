@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lar de Idosos Vida Serena</title>
+<style>
+  /* Estilo geral */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ee;
+    color: #3a3a3a;
+    margin: 0; padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #557a95;
+    color: #f0f0f0;
+    padding: 25px 15px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+  }
+  nav {
+    margin-top: 12px;
+  }
+  nav a {
+    color: #f0f0f0;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  h2 {
+    color: #35586c;
+    border-bottom: 3px solid #35586c;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  /* Sobre nós */
+  #sobre {
+    background: #e8f0f6;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 3px 8px rgba(53, 88, 108, 0.3);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  #sobre img {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(53, 88, 108, 0.25);
+  }
+  #sobre p {
+    flex: 1;
+    font-size: 1.1rem;
+  }
+  /* Serviços */
+  #servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .servico {
+    background: #f0f6fa;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 2px 7px rgba(53, 88, 108, 0.2);
+    text-align: center;
+  }
+  .servico img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+  .servico h3 {
+    margin: 0 0 10px 0;
+    color: #35586c;
+  }
+  .servico p {
+    font-size: 1rem;
+    color: #565656;
+  }
+  /* Formulário */
+  form {
+    background: #e8f0f6;
+    border-radius: 12px;
+    padding: 25px 30px;
+    max-width: 520px;
+    margin: 0 auto 50px;
+    box-shadow: 0 3px 8px rgba(53, 88, 108, 0.3);
+  }
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 7px;
+    border-radius: 6px;
+    border: 1.7px solid #557a95;
+    font-size: 1rem;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  button {
+    margin-top: 25px;
+    background-color: #35586c;
+    color: #f0f0f0;
+    border: none;
+    padding: 14px;
+    font-size: 1.15rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #2a4153;
+  }
+  .error {
+    color: #c0392b;
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+  /* Footer */
+  footer {
+    background-color: #557a95;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 1rem;
+  }
+  /* Responsividade */
+  @media (max-width: 720px) {
+    #servicos {
+      flex-direction: column;
+      align-items: center;
+    }
+    .servico {
+      width: 90%;
+    }
+    #sobre {
+      flex-direction: column;
+    }
+    #sobre img {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Lar de Idosos Vida Serena</h1>
+  <nav>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section id="sobre" aria-labelledby="sobre-title">
+    <img src="images.jpeg" alt="Idosos sorrindo em ambiente acolhedor" />
+    <div>
+      <h2 id="sobre-title">Sobre Nós</h2>
+      <p>O Lar de Idosos Vida Serena oferece um ambiente acolhedor, seguro e confortável para idosos que buscam qualidade de vida, cuidado humanizado e atenção especializada. Nossa equipe dedicada trabalha para garantir bem-estar físico, emocional e social dos nossos residentes, com respeito e carinho.</p>
+    </div>
+  </section>
+
+  <section id="servicos" aria-labelledby="servicos-title">
+    <h2 id="servicos-title">Nossos Serviços</h2>
+    <article class="servico">
+      <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Ícone de cuidados médicos" />
+      <h3>Cuidados Médicos</h3>
+      <p>Acompanhamento de saúde com profissionais qualificados 24 horas por dia.</p>
+    </article>
+    <article class="servico">
+      <img src="https://cdn-icons-png.flaticon.com/512/2907/2907157.png" alt="Ícone de alimentação saudável" />
+      <h3>Alimentação Balanceada</h3>
+      <p>Refeições nutritivas e adaptadas às necessidades de cada idoso.</p>
+    </article>
+    <article class="servico">
+      <img src="https://cdn-icons-png.flaticon.com/512/2933/2933925.png" alt="Ícone de atividades" />
+      <h3>Atividades Recreativas</h3>
+      <p>Programação diária com exercícios físicos, oficinas e lazer.</p>
+    </article>
+    <article class="servico">
+      <img src="https://cdn-icons-png.flaticon.com/512/2913/2913739.png" alt="Ícone de ambiente acolhedor" />
+      <h3>Ambiente Acolhedor</h3>
+      <p>Espaços confortáveis e seguros que promovem bem-estar e tranquilidade.</p>
+    </article>
+  </section>
+
+  <section id="contato" aria-labelledby="contato-title">
+    <h2 id="contato-title">Fale Conosco</h2>
+    <form id="contatoForm" novalidate>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required />
+      <span class="error" id="nomeError"></span>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+      <span class="error" id="emailError"></span>
+
+      <label for="assunto">Assunto:</label>
+      <select id="assunto" name="assunto" required>
+        <option value="">Selecione um assunto</option>
+        <option value="visita">Agendar Visita</option>
+        <option value="informacoes">Solicitar Informações</option>
+        <option value="outros">Outros</option>
+      </select>
+      <span class="error" id="assuntoError"></span>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <span class="error" id="mensagemError"></span>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Lar de Idosos Vida Serena - Todos os direitos reservados
+</footer>
+
+<script>
+  const form = document.getElementById('contatoForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    let valido = true;
+
+    // Limpar erros anteriores
+    document.querySelectorAll('.error').forEach(e => e.textContent = '');
+
+    // Validação nome
+    const nome = form.nome.value.trim();
+    if (nome.length < 3) {
+      document.getElementById('nomeError').textContent = 'Informe um nome com ao menos 3 caracteres.';
+      valido = false;
+    }
+
+    // Validação email simples
+    const email = form.email.value.trim();
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regexEmail.test(email)) {
+      document.getElementById('emailError').textContent = 'Informe um e-mail válido.';
+      valido = false;
+    }
+
+    // Validação assunto
+    const assunto = form.assunto.value;
+    if (assunto === '') {
+      document.getElementById('assuntoError').textContent = 'Selecione um assunto.';
+      valido = false;
+    }
+
+    // Validação mensagem
+    const mensagem = form.mensagem.value.trim();
+    if (mensagem.length < 10) {
+      document.getElementById('mensagemError').textContent = 'A mensagem deve conter pelo menos 10 caracteres.';
+      valido = false;
+    }
+
+    if (valido) {
+      alert(`Obrigado pelo contato, ${nome}! Em breve responderemos sua mensagem.`);
+      form.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
